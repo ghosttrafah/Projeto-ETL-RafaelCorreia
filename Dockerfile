@@ -22,3 +22,6 @@ CMD ["python", "main.py"]
 
 #comando para abrir um shell interativo, pois obtive erro na construção da imagem e esse comando ajuda a entender
 #CMD ["sh"]
+
+#alertado pelo prórpio terminal quanto a exibição dos dados do token de api Kaggle, ele recomenda o comando abaixo para alterar as permissões do json
+RUN chmod 600 /root/.kaggle/kaggle.json'
