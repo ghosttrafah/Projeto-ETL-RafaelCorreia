@@ -16,3 +16,6 @@ COPY . .
 
 # Comando que vai rodar o script principal
 CMD ["python", "main.py"]
+
+#comando para abrir um shell interativo, pois obtive erro na construção da imagem e esse comando ajuda a entender
+#CMD ["sh"]
