@@ -10,6 +10,9 @@ COPY requirements.txt .
 # Comando que vai instalar as depend~encias
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Comando que copiara o arquivo do kaggle.json para o diretório /root/.kaggle
+RUN mkdir -p /root/.kaggle
+COPY kaggle.json /root/.kaggle/
 
 # Copia todo o conteúdo da aplicação para o contêiner
 COPY . .
