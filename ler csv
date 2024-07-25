@@ -1,0 +1,8 @@
+import pandas as pd
+
+# Ler o CSV
+df = pd.read_csv('C:/Users/color/Documents/Projeto Rafa - ETL F1rst/Projeto-ETL-RafaelCorreia/data/GFG_FINAL.csv')
+
+# Mostrar as primeiras linhas e os nomes das colunas
+print(df.head())
+print(df.columns)
